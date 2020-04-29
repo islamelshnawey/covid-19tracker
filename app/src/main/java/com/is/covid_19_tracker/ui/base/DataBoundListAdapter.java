@@ -12,7 +12,12 @@ import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
-
+/**
+ * A generic RecyclerView adapter that uses Data Binding & DiffUtil.
+ *
+ * @param <T> Type of the items in the list
+ * @param <V> The type of the ViewDataBinding
+ */
 public abstract class DataBoundListAdapter<T, V extends ViewDataBinding>
         extends RecyclerView.Adapter<DataBoundViewHolder<V>> {
 

@@ -94,16 +94,14 @@ public class WorldListAdapter extends DataBoundListAdapter<Corona, ItemWorldList
     protected boolean areItemsTheSame(Corona oldItem, Corona newItem) {
         return Objects.equals(oldItem.getId(), newItem.getId())
                 && oldItem.getCases() == (newItem.getCases())
-                && oldItem.getDeaths() == (newItem.getDeaths())
-                ;
+                && oldItem.getDeaths() == (newItem.getDeaths());
     }
 
     @Override
     protected boolean areContentsTheSame(Corona oldItem, Corona newItem) {
         return Objects.equals(oldItem.getId(), newItem.getId())
                 && oldItem.getCases() == (newItem.getCases())
-                && oldItem.getDeaths() == (newItem.getDeaths())
-                ;
+                && oldItem.getDeaths() == (newItem.getDeaths());
     }
 
     @Override
